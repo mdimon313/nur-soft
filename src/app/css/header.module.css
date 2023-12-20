@@ -17,6 +17,7 @@
 }
 
 .logo {
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -68,11 +69,11 @@
     position: absolute;
     z-index: 9;
     background-color: white;
-    width: 10em;
+    width: 12em;
     transform-origin: top;
-    transform: scaleY(1);
-    opacity: 1;
-    visibility: visible;
+    transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
 
@@ -94,6 +95,7 @@
     line-height: 30px;
     padding: 0 0.6em;
     font-size: 0.7em;
+    text-align: center;
 }
 
 .dropdown ul li .dropdown_link:hover {
@@ -106,8 +108,10 @@
 @media (max-width: 760px) {
     .menuBar {
         display: block;
+        font-size: 1.3em;
     }
 
+    /* main menu */
     .ul {
         position: absolute;
         display: block;
@@ -122,6 +126,13 @@
         background-color: #fff;
     }
 
+    .link {
+        font-size: 1.08em;
+    }
+
+    /* main menu */
+
+    /* dropdown menu */
     .dropdown {
         position: unset;
         width: 100%;
@@ -133,12 +144,19 @@
         display: none;
         transition: all 0.3s ease-in-out;
     }
+
     .mainMenu:hover .dropdown {
         transform: scaleY(1);
         opacity: 1;
         visibility: visible;
         display: block;
     }
+
+    .dropdown_link{
+        font-size: 1.02em !important;
+    }
+
+    /* dropdown menu */
 }
 
 @media (prefers-color-scheme: dark) {
