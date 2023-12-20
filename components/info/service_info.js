@@ -18,13 +18,13 @@ const services = [
         links: './wes.html'
     }
     ,
-    {
+/*     {
         name: 'ad',
         icon: <FaAndroid />,
         title: 'App Development',
         desc: 'For engaged with a lot of customers for your business is connect with them with a Android application. We will develop a great app for your business.',
         links: './apdev.html'
-    },
+    }, */
     {
         name: 'sdt',
         icon: <FaLaptopFile />,
@@ -39,13 +39,13 @@ const services = [
         desc: 'If you need any help with IT consultancy for your business or company then just contact with us. We will provide you a great and easy solution that will help you to solve your problems.',
         links: './itcon.html'
     },
-    {
+/*     {
         name: 'ha',
         icon: <LuLaptop2 />,
         title: 'Hardware Accessories',
         desc: 'For your office, company or business you must need hardware accessories now-a-days. We will provide all kind of hardware accessories at a cheap rate.',
         links: './hardwareacc.html'
-    }
+    } */
 ];
 
 export default services;
