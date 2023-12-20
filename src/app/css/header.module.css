@@ -125,5 +125,9 @@ transform: scale(1);
         .bars {
             color: #fff;
         }
+
+        .dropdown {
+            background-color: #000;
+        }
     }
 }
