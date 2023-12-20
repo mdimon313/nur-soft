@@ -4,6 +4,7 @@ import { useState } from 'react';
 import headerStyle from '../src/app/css/header.module.css'
 import { FaTimes } from "react-icons/fa";
 import { FaAlignRight } from "react-icons/fa6";
+import Link from 'next/link';
 const Navigation = () => {
     const [isClick, isSetClick] = useState(false);
     const toggleNavbar = () => {
@@ -15,13 +16,21 @@ const Navigation = () => {
         <header className={headerStyle.header}>
             <div className='container'>
                 <nav className={headerStyle.nav}>
-                    <a href='/' className={headerStyle.logo}>Soft</a>
+                    <Link href='/' className={headerStyle.logo}>Soft</Link>
                     <ul className={headerStyle.ul} style={isClick ? { transform: "scale(1)" } : {}}>
-                        <li><a href='/' className={`${headerStyle.link} ${headerStyle.active}`}>Home</a></li>
-                        <li><a className={headerStyle.link}>Service</a></li>
-                        <li><a href='/portfolio' className={headerStyle.link}>portfolio</a></li>
-                        <li><a href='/blog' className={headerStyle.link}>blog</a></li>
-                        <li><a href='/contact' className={headerStyle.link}>Contact Us</a></li>
+                        <li><Link href='/' className={`${headerStyle.link} ${headerStyle.active}`}>Home</Link></li>
+                        <li className={headerStyle.mainMenu}><a className={`${headerStyle.link}`}>Service</a>
+
+                            <div className={headerStyle.dropdown}>
+                                <ul>
+                                    <li><Link href='/' className={headerStyle.dropdown_link}>menu 1</Link></li>
+                                    <li><Link href='/' className={headerStyle.dropdown_link}>menu 2</Link></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><Link href='/portfolio' className={headerStyle.link}>portfolio</Link></li>
+                        <li><Link href='/blog' className={headerStyle.link}>blog</Link></li>
+                        <li><Link href='/contact' className={headerStyle.link}>Contact Us</Link></li>
                     </ul>
                     <button onClick={toggleNavbar} className={headerStyle.menuBar}>
                         {isClick ? (
