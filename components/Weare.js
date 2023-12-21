@@ -19,7 +19,7 @@ const Weare = () => {
                         </p>
                     </div>
                     <div className={weAreStyle.box_right}>
-                        <Image src="/imgs/weare.jpg" width={200} height={150} />
+                        <Image src="/imgs/weare.jpg" alt="img" width={200} height={150} />
                     </div>
                 </div>
             </div>
