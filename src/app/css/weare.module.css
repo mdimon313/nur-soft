@@ -1,0 +1,29 @@
+.we_are {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1em ;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: dense;
+}
+
+.box_heading {
+    font-size: 32px;
+    padding: 0;
+    margin-bottom: 16px;
+    font-weight: bolder;
+}
+
+.box_desc {
+    line-height: 26px;
+    text-align: justify;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.box_right img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}

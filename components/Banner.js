@@ -45,8 +45,8 @@ const Banner = () => {
             <div className="keen-slider__slide number-slide1"><Image className={bannerStyle.banner_img} src="/imgs/bg1.webp" alt='img 1' width={1024} height={500} /></div>
             <div className="keen-slider__slide number-slide2"><Image className={bannerStyle.banner_img} src="/imgs/oracle-apex.jpeg" alt='img 2' width={1260} height={500} /></div>
             <div className="keen-slider__slide number-slide2"><Image className={bannerStyle.banner_img} src="/imgs/bg3.jpg" alt='img 2' width={1260} height={500} /></div>
-            <div className="keen-slider__slide number-slide2"><Image className={bannerStyle.banner_img} src="/imgs/bg4.jpg" alt='img 2' width={1260} height={500} /></div>
-            <div className="keen-slider__slide number-slide2"><Image className={bannerStyle.banner_img} src="/imgs/bg5.jpeg" alt='img 2' width={1260} height={500} /></div>
+            <div className="keen-slider__slide number-slide2"><Image className={bannerStyle.banner_img} src="/imgs/bg4.jpg" alt='img 3' width={1260} height={500} /></div>
+            <div className="keen-slider__slide number-slide2"><Image className={bannerStyle.banner_img} src="/imgs/bg5.jpeg" alt='img 4' width={1260} height={500} /></div>
             {/* <div className="keen-slider__slide number-slide3">3</div>
             <div className="keen-slider__slide number-slide4">4</div>
             <div className="keen-slider__slide number-slide5">5</div>
