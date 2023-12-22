@@ -7,6 +7,42 @@
     grid-auto-flow: dense;
 }
 
-.choose_box .box_meta h3 {
-    font-size: 21px;
+.box {
+    border: 1px solid #8d8d8d;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+.box:hover {
+    border: 1px solid #1eacff;
+    box-shadow: 0px 3px 14px -5px #ddd;
+}
+
+.box_icon {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: dodgerblue;
+    color: #fff;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    margin-bottom: 0.3em;
+    transition: var(--transition);
+    font-size: 2.5em;
+}
+
+.box:hover .box_icon {
+    background-color: cadetblue;
+}
+.box_meta h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+.box_meta p {
+    font-size: 0.8em;
 }

@@ -1,0 +1,120 @@
+.team_main_wrapper {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 16px;
+    grid-auto-flow: dense;
+}
+
+.team_main {
+    margin-top: 32px;
+}
+
+.wrap {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.pro {
+    width: 17rem;
+    margin: auto;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px -5px #ccc, 0px 0px 15px -3px #ccc;
+}
+
+.pro_img {
+    box-shadow: 0px 0px 20px #dadada;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 16px auto;
+}
+
+.pro_img img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.pro_desc h2 {
+    font-size: 20px;
+}
+
+.desig {
+    display: inline-block;
+    background-color: dodgerblue;
+    padding: 2px 10px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 20px;
+    margin: 5px 0;
+}
+
+.des_p {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #343434;
+}
+
+.pro_desc.ceo {
+    text-align: center;
+}
+
+.pro.ceo {
+    box-shadow: none;
+}
+
+
+.social a.f {
+    background-color: #0866FF;
+}
+
+.social a.f:hover {
+    box-shadow: 0px 0px 15px -3px #0866FF;
+}
+
+.social a.t {
+    background-color: #1DA1F2;
+}
+
+.social a.t:hover {
+    box-shadow: 0px 0px 15px -3px #1DA1F2;
+}
+
+.social a.ins {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social a.ins:hover {
+    box-shadow: 0px 0px 15px -3px radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social a.lin {
+    background-color: #0077B5;
+}
+
+.social a.lin:hover {
+    box-shadow: 0px 0px 15px -3px #0077B5;
+}
+
+.social a.wp {
+    background-color: #2BB741;
+}
+
+.social a.wp:hover {
+    box-shadow: 0px 0px 15px -3px #2BB741;
+}
+
+.social a.y {
+    background-color: #FF0000;
+}
+
+.social a.y:hover {
+    box-shadow: 0px 0px 15px -3px #FF0000;
+}

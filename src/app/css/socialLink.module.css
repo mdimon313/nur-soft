@@ -1,0 +1,29 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.social a {
+    display: block;
+    margin: 0 2px;
+    background-color: dodgerblue;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--transition);
+    font-size: 1em;
+}
+
+.social a:hover svg {
+    transform: scale(1.2);
+    transition: var(--transition);
+}
+

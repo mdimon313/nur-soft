@@ -5,6 +5,7 @@ import OurService from '../../components/OurService'
 import Weare from '../../components/Weare'
 import ChooseUs from '../../components/ChooseUs'
 import ProjectGalary from '../../components/ProjectGalary'
+import Team from '../../components/Team'
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
         <Weare />
         <ChooseUs />
         <ProjectGalary />
+        <Team />
       </main>
     </>
   )

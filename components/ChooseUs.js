@@ -2,6 +2,7 @@
 import chooseUsStyle from '../src/app/css/chooseus.module.css'
 import ChooseCard from './ChooseService';
 import SectionTitle from './SectionTitle';
+import ServiceCard from './ServiceCard';
 import chooseUsServices from './info/chooseService';
 const ChooseUs = () => {
     return (
@@ -11,7 +12,7 @@ const ChooseUs = () => {
                 <div className={chooseUsStyle.chooseus_main} id="chooseus_main">
                 {chooseUsServices.map((services, ind)=>{
                     return (
-                        <ChooseCard key={ind} icon={services.icon} title={services.heading} desc={services.desc} />
+                        <ServiceCard key={ind} icon={services.icon} title={services.heading} desc={services.desc} isButton={false} />
                     );
                 })}
                 </div>
