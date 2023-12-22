@@ -4,6 +4,7 @@ import Banner from '../../components/Banner'
 import OurService from '../../components/OurService'
 import Weare from '../../components/Weare'
 import ChooseUs from '../../components/ChooseUs'
+import ProjectGalary from '../../components/ProjectGalary'
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
         <OurService />
         <Weare />
         <ChooseUs />
+        <ProjectGalary />
       </main>
     </>
   )
