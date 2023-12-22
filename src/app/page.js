@@ -6,6 +6,7 @@ import Weare from '../../components/Weare'
 import ChooseUs from '../../components/ChooseUs'
 import ProjectGalary from '../../components/ProjectGalary'
 import Team from '../../components/Team'
+import Footer from '../../components/Footer'
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
         <ProjectGalary />
         <Team />
       </main>
+      <Footer />
     </>
   )
 }

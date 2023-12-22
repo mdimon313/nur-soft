@@ -1,0 +1,25 @@
+.footer {
+    background-color: #f6f6f6;
+    /* color: var(--primary-white); */
+    padding: 2em 0;
+}
+
+.footer_wrapper {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    margin-top: 16px;
+    gap: 16px;
+    place-content: cetner;
+}
+
+.com_info {
+    text-align: center;
+}
+
+.com_info > p{
+    font-size: 0.8em;
+}
+.com_info address {
+    font-size: 0.8em;
+}

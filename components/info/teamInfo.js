@@ -15,7 +15,7 @@ const team = [
             y_icon: 'fab fa-youtube',
             linkedin: 'https://www.linkedin.com',
             lin_icon: 'fab fa-linkedin-in',
-            whatsapp: null,
+            whatsapp: 'https://web.whatsapp.com/',
             wp_icon: 'fab fa-whatsapp',
             twitter: 'https://www.twitter.com',
             t_icon: 'fab fa-twitter'
@@ -37,7 +37,7 @@ const team = [
             y_icon: 'fab fa-youtube',
             linkedin: 'https://www.linkedin.com',
             lin_icon: 'fab fa-linkedin-in',
-            whatsapp: null,
+            whatsapp: 'https://web.whatsapp.com/',
             wp_icon: 'fab fa-whatsapp',
             twitter: 'https://www.twitter.com',
             t_icon: 'fab fa-twitter'
@@ -59,7 +59,7 @@ const team = [
             y_icon: 'fab fa-youtube',
             linkedin: 'https://www.linkedin.com',
             lin_icon: 'fab fa-linkedin-in',
-            whatsapp: null,
+            whatsapp: 'https://web.whatsapp.com/',
             wp_icon: 'fab fa-whatsapp',
             twitter: 'https://www.twitter.com',
             t_icon: 'fab fa-twitter'
@@ -81,7 +81,7 @@ const team = [
             y_icon: 'fab fa-youtube',
             linkedin: 'https://www.linkedin.com',
             lin_icon: 'fab fa-linkedin-in',
-            whatsapp: null,
+            whatsapp: 'https://web.whatsapp.com/',
             wp_icon: 'fab fa-whatsapp',
             twitter: 'https://www.twitter.com',
             t_icon: 'fab fa-twitter'

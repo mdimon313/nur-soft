@@ -1,10 +1,10 @@
 .header {
     width: 100%;
-    /* position: sticky;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
     z-index: 9;
-    /* background-color: #ddd; */
+    background-color: #fff;
     height: 3rem;
     line-height: 3rem;
     border-bottom: 1px solid #ddd;

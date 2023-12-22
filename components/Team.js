@@ -6,26 +6,57 @@ import teamInfo from './info/teamInfo'
 const { default: SectionTitle } = require("./SectionTitle")
 
 const Team = () => {
-    const [teamData, setTeamData] = useState([]);
-    useEffect(()=>{
-        setTeamData([teamInfo])
-    }, [])
-    console.log(teamData.name);
     return (
         <section>
             <div className="container">
                 <div className={teamStyle.team_main}>
                     <SectionTitle title={"Our Exparts"} />
-                        <TeamCard imgSrc={'/imgs/team/ceo.jpg'} name={"Muhammed Nur E Alam"} designation={"Founder & Ceo"} desc={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                    <TeamCard 
+                    imgSrc={'/imgs/team/ceo.jpg'} 
+                    name={"Muhammed Nur E Alam"} 
+                    designation={"Founder & Ceo"} 
+                    desc={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
                             tenetur maiores iure sit
-                            optio molestiae corrupti ratione mollitia quos accusamus!`} fb={true} tweet={true} wp={true} lin={true} y={true} ins={true}/>
+                            optio molestiae corrupti ratione mollitia quos accusamus!`} 
+                    fb={true}
+                    f={'https://www.facebook.com/'}
+                    tweet={true} 
+                    t={'https://twitter.com/'}
+                    wp={true} 
+                    w={'https://web.whatsapp.com/'}
+                    lin={true} 
+                    l={'https://bd.linkedin.com/'}
+                    yt={false}
+                    y={'https://www.youtube.com/'}
+                    ins={true} 
+                    i={'https://www.instagram.com/'}
+                    />
                     <div className={teamStyle.team_main_wrapper} id="team_main_wrapper">
+                        {
+                            teamInfo.map((item, id) => {
+                                console.log(item.social.whatsapp);
+                                return <TeamCard 
+                                key={id} 
+                                imgSrc={item.image} 
+                                name={item.name} 
+                                designation={item.designation} 
+                                desc={item.desc} 
+                                fb={true}
+                                f={item.social.facebook}
+                                tweet={true} 
+                                t={item.social.twitter}
+                                wp={true} 
+                                w={item.social.whatsapp}
+                                lin={true} 
+                                l={item.social.linkedin}
+                                yt={false}
+                                y={item.social.youtube}
+                                ins={true} 
+                                i={item.social.instagram}
+                                 />
+                            })
+                        }
                     </div>
-                    {
-                       teamData.map((item)=>{
-                        <TeamCard imgSrc={item.image} name={item.name} designation={item.designation} desc={item.desc} fb={true} tweet={true} wp={true} lin={true} y={true} ins={true}/>
-                       }) 
-                    }
                 </div>
             </div>
         </section>
