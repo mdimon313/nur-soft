@@ -1,13 +1,17 @@
 "use client"
 
+import Footer from "../../../components/Footer";
 import Navigation from "../../../components/Nav";
 
-const Contact_us = ()=>{
+const Contact_us = () => {
     return (
-        <div>
+        <>
             <Navigation />
-            <h1>Welcome to Contact Us</h1>
-        </div>
+            <main>
+                <h1>Welcome to Contact Us</h1>
+            </main>
+            <Footer />
+        </>
     );
 }
 
