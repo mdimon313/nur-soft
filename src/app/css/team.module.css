@@ -32,6 +32,7 @@
     /* border: 1px solid #ddd; */
     transform: translateY(-5px);
 }
+
 .pro:hover .pro_img img {
     box-shadow: 0px 0px 20px #dadada;
 }
@@ -125,4 +126,12 @@
 
 .social a.y:hover {
     box-shadow: 0px 0px 15px -3px #FF0000;
+}
+
+@media (prefers-color-scheme: dark) {
+    .des_p {
+        padding: 5px 0;
+        font-size: 14px;
+        color: #fff;
+    }
 }

@@ -17,9 +17,19 @@
     text-align: center;
 }
 
-.com_info > p{
+.com_info>p {
     font-size: 0.8em;
 }
+
 .com_info address {
     font-size: 0.8em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background-color: #000000;
+        /* color: var(--primary-white); */
+        /* padding: 2em 0; */
+        color: #fff;
+    }
 }
