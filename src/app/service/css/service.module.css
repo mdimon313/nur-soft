@@ -1,0 +1,8 @@
+.content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.content_left {
+    grid-column: 1/4;
+}

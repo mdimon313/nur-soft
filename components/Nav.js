@@ -23,10 +23,10 @@ const Navigation = () => {
 
                             <div className={headerStyle.dropdown}>
                                 <ul>
-                                    <li><Link href='/' className={headerStyle.dropdown_link}>Sofware Development Service</Link></li>
-                                    <li><Link href='/' className={headerStyle.dropdown_link}>Software Development Training</Link></li>
-                                    <li><Link href='/' className={headerStyle.dropdown_link}>Website Development Service</Link></li>
-                                    <li><Link href='/' className={headerStyle.dropdown_link}>IT Consultancy Service</Link></li>
+                                    <li><Link href='/service/software_development' className={headerStyle.dropdown_link}>Sofware Development Service</Link></li>
+                                    <li><Link href='/service/Soft_traning' className={headerStyle.dropdown_link}>Software Development Training</Link></li>
+                                    <li><Link href='/service/Web' className={headerStyle.dropdown_link}>Website Development Service</Link></li>
+                                    <li><Link href='/service/it' className={headerStyle.dropdown_link}>IT Consultancy Service</Link></li>
                                 </ul>
                             </div>
                         </li>
