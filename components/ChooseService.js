@@ -7,7 +7,7 @@ const ChooseCard = ({icon, title, desc}) => {
             <div className={chooseUsStyle.box_meta}>
                 <h3><b>{title}</b></h3>
                 <p>{desc}</p>
-                {/* <!-- <button type="button" id="readMore" onClick="redrc()">Read More</button> --> */}
+                {/* <button type="button" id="readMore" onClick="redrc()">Read More</button>  */}
             </div>
         </div>
     );

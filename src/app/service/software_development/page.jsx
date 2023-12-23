@@ -10,7 +10,9 @@ const SoftwareDevService = () => {
                 <div className={ServiceStyle.content_wrapper}>
                     <div className={ServiceStyle.content_left}>
                         <h2>Left Side</h2>
-                        <div className=""></div>
+                        <div className={ServiceStyle.images}>
+                            <h5>Main Content</h5>
+                        </div>
                     </div>
                     <div className={ServiceStyle.content_right}>
                         <h2>Contact Us</h2>
