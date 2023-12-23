@@ -2,12 +2,12 @@ const imgGalary = [
     {
         id: 1,
         title: 'Software Development',
-        img: '/imgs/img-galary/soft_developpement.png'
+        img: '/imgs/img-galary/eCommerce.png'
     },
     {
         id: 2,
         title: 'Software Development',
-        img: '/imgs/img-galary/soft_developpement2.png'
+        img: '/imgs/img-galary/suppershop.png'
     },
     {
         id: 3,
