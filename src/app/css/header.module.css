@@ -7,7 +7,7 @@
     background-color: #fff;
     height: 3rem;
     line-height: 3rem;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .header .nav {
@@ -161,11 +161,11 @@
 
 @media (prefers-color-scheme: dark) {
     .ul {
-        background-color: #000;
+        background-color: #111111;
     }
 
     .header{
-        background-color: #000000;
+        background-color: #111111;
     }
 
     .bars {
@@ -173,6 +173,6 @@
     }
 
     .dropdown {
-        background-color: #000;
+        background-color: #111111;
     }
 }
