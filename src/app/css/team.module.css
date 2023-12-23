@@ -40,7 +40,7 @@
 .pro_img {
     width: 135px;
     height: 135px;
-    border-radius: 50%;
+    border-radius: 1.5em;
     overflow: hidden;
     margin: 16px auto;
 }
@@ -86,6 +86,7 @@
 
 .social a.f:hover {
     box-shadow: 0px 0px 15px -3px #0866FF;
+    transform: translateY(-0.3em);
 }
 
 .social a.t {
@@ -94,6 +95,7 @@
 
 .social a.t:hover {
     box-shadow: 0px 0px 15px -3px #1DA1F2;
+    transform: translateY(-0.3em);
 }
 
 .social a.ins {
@@ -102,6 +104,7 @@
 
 .social a.ins:hover {
     box-shadow: 0px 0px 15px -3px radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    transform: translateY(-0.3em);
 }
 
 .social a.lin {
@@ -110,6 +113,7 @@
 
 .social a.lin:hover {
     box-shadow: 0px 0px 15px -3px #0077B5;
+    transform: translateY(-0.3em);
 }
 
 .social a.wp {
@@ -118,6 +122,7 @@
 
 .social a.wp:hover {
     box-shadow: 0px 0px 15px -3px #2BB741;
+    transform: translateY(-0.3em);
 }
 
 .social a.y {
@@ -126,6 +131,7 @@
 
 .social a.y:hover {
     box-shadow: 0px 0px 15px -3px #FF0000;
+    transform: translateY(-3px);
 }
 
 @media (prefers-color-scheme: dark) {

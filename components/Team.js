@@ -14,7 +14,8 @@ const Team = () => {
                     <TeamCard 
                     imgSrc={'/imgs/team/ceo.jpg'} 
                     name={"Muhammed Nur E Alam"} 
-                    designation={"Founder & Ceo"} 
+                    designation={"Founder & Ceo"}
+                    isShow={true}
                     desc={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
                             tenetur maiores iure sit
                             optio molestiae corrupti ratione mollitia quos accusamus!`} 
@@ -26,7 +27,7 @@ const Team = () => {
                     w={'https://web.whatsapp.com/'}
                     lin={true} 
                     l={'https://bd.linkedin.com/'}
-                    yt={false}
+                    yt={true}
                     y={'https://www.youtube.com/'}
                     ins={true} 
                     i={'https://www.instagram.com/'}
@@ -36,24 +37,24 @@ const Team = () => {
                             teamInfo.map((item, id) => {
                                 console.log(item.social.whatsapp);
                                 return <TeamCard 
-                                key={id} 
-                                imgSrc={item.image} 
-                                name={item.name} 
-                                designation={item.designation} 
-                                desc={item.desc} 
-                                fb={true}
-                                f={item.social.facebook}
-                                tweet={true} 
-                                t={item.social.twitter}
-                                wp={true} 
-                                w={item.social.whatsapp}
-                                lin={true} 
-                                l={item.social.linkedin}
-                                yt={false}
-                                y={item.social.youtube}
-                                ins={true} 
-                                i={item.social.instagram}
-                                 />
+                                        key={id} 
+                                        imgSrc={item.image} 
+                                        name={item.name} 
+                                        designation={item.designation} 
+                                        isShow = {false}
+                                        desc={item.desc} 
+                                        fb={true}
+                                        f={item.social.facebook}
+                                        tweet={true} 
+                                        t={item.social.twitter}
+                                        wp={true} 
+                                        w={item.social.whatsapp}
+                                        lin={true} 
+                                        l={item.social.linkedin}
+                                        yt={false}
+                                        y={item.social.youtube}
+                                        ins={true} 
+                                        i={item.social.instagram} />
                             })
                         }
                     </div>

@@ -8,14 +8,14 @@ import { CiInstagram } from "react-icons/ci";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { FaYoutube } from "react-icons/fa6";
-const TeamCard = ({ imgSrc, name, designation, desc, fb, tweet, ins, lin, wp, yt, f, t, i, l, w, y }) => {
+const TeamCard = ({ imgSrc, name,isShow, designation, desc, fb, tweet, ins, lin, wp, yt, f, t, i, l, w, y }) => {
     return (
         <div className={`${teamStyle.pro} ${teamStyle.ceo}`}>
             <div className={teamStyle.pro_img}><img src={imgSrc} alt="team1" className={teamStyle.img} /></div>
             <div className={`${teamStyle.pro_desc} ${teamStyle.ceo}`}>
                 <h2>{name}</h2>
                 <p className={teamStyle.desig}>{designation}</p>
-                <p className={teamStyle.des_p}>{desc}</p>
+                {isShow && <p className={teamStyle.des_p}>{desc}</p>}
             </div>
             {/* <!-- social link --> */}
             <div className={socialStyle.social}>
