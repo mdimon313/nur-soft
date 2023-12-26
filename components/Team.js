@@ -20,17 +20,17 @@ const Team = () => {
                             tenetur maiores iure sit
                             optio molestiae corrupti ratione mollitia quos accusamus!`} 
                     fb={true}
-                    f={'https://www.facebook.com/'}
+                    f={'https://www.facebook.com/nurealam.rajjak'}
                     tweet={true} 
-                    t={'https://twitter.com/'}
+                    t={'https://twitter.com/Nurealam1990'}
                     wp={true} 
                     w={'https://web.whatsapp.com/'}
                     lin={true} 
-                    l={'https://bd.linkedin.com/'}
+                    l={'https://www.linkedin.com/in/muhammad-nur-e-alam-a180a393'}
                     yt={true}
-                    y={'https://www.youtube.com/'}
+                    y={'https://www.youtube.com/@muhammadnurealam'}
                     ins={true} 
-                    i={'https://www.instagram.com/'}
+                    i={'https://www.instagram.com/nurealam.rajjak'}
                     />
                     <div className={teamStyle.team_main_wrapper} id="team_main_wrapper">
                         {
