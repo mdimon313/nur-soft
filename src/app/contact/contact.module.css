@@ -1,0 +1,157 @@
+.section {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wraper {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 0.3em;
+  box-shadow: 2px 8px 16px -9px #999;
+}
+
+.formSection {
+  position: relative;
+  display: flex;
+}
+
+.info {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #858d98;
+  width: 20em;
+  padding: 1em;
+  border-radius: 0.3em;
+  /* height: 19em; */
+}
+
+.info p {
+  font-size: 1.3em;
+  padding-bottom: 0.3em;
+}
+
+.info span {
+  margin-bottom: 0.5em;
+  display: block;
+  font-size: 0.9em;
+}
+
+.contact_info {
+  color: #fff;
+}
+.form {
+  margin: 1em;
+}
+.fomrs {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  padding: 3em 0em 3em 5em;
+}
+.fomrs input,
+.fomrs textarea {
+  padding: 0.6em;
+  margin: 0.5em 0;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
+  border: 1px solid #ddd;
+  border-radius: 0.2em;
+  outline: none;
+  transition: var(--transition);
+  background-color: transparent;
+}
+
+.fomrs input::placeholder,
+.fomrs textarea::placeholder {
+  font-size: 0.9em;
+}
+
+.fomrs input:focus,
+.fomrs textarea:focus {
+  border: 1px solid dodgerblue;
+}
+
+.fomrs textarea {
+  min-height: 112px !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  max-height: 112px !important;
+  resize: none;
+}
+
+.fomrs textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.fomrs button {
+  width: 7em;
+  display: block;
+  background-color: transparent;
+  border: 1px solid dodgerblue;
+  border-radius: 0.2em;
+  padding: 0.3em;
+  cursor: pointer;
+  user-select: none;
+  transition: var(--transition);
+  margin-top: 0.5em;
+}
+
+.fomrs button:hover {
+  color: #fff;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+
+/* responsive */
+@media (max-width: 760px) {
+  .section {
+    height: auto;
+  }
+  .wraper {
+    width: 100%;
+  }
+  .info {
+    position: unset;
+    transform: none;
+    width: 100%;
+  }
+  .formSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  .form {
+    margin: 0;
+  }
+  .fomrs {
+    padding: 0;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .fomrs button {
+    width: 100%;
+  }
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .section {
+    background-color: transparent;
+  }
+  .wraper {
+    background-color: #474747;
+  }
+  .fomrs input::placeholder,
+  .fomrs textarea::placeholder {
+    color: #999;
+  }
+}

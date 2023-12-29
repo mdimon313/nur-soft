@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import imgGalary from "./info/imgGalary";
 import SectionTitle from "./SectionTitle";
 import galaryStyle from '../src/app/css/imgGalary.module.css'
+import Image from "next/image";
 
 const ProjectGalary = () => {
     const [data, setData] = useState([]);
@@ -31,8 +32,12 @@ const ProjectGalary = () => {
                     {
                         data.map(item => {
                             return (
-                                <div key={item.id}>
-                                    <img src={item.img} alt={item.title} className={galaryStyle.galaryImg} />
+                                <div key={item.id} className={galaryStyle.imgCard}>
+                                    <Image src={item.img} alt={item.title} className={galaryStyle.galaryImg} loading="lazy" width={100} height={100} />
+                                    <div className={galaryStyle.img_meta}>
+                                        <p>{item.title}</p>
+                                        <button>preview</button>
+                                    </div>
                                 </div>
                             );
                         })

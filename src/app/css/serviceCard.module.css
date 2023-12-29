@@ -1,62 +1,61 @@
 .box {
-    border: 0.0625em solid #8d8d8d;
-    padding: 0.7em;
-    border-radius: 0.625em;
-    text-align: center;
-    transition: var(--transition);
+  border: 0.0625em solid #8d8d8d;
+  padding: 0.7em;
+  border-radius: 0.625em;
+  text-align: center;
+  transition: var(--transition);
 }
 
 .box:hover {
-    border: 1px solid #1eacff;
-    /* border: 1px solid var(--card-border-rgb); */
-    box-shadow: 0px 3px 14px -5px #ddd;
+  border: 1px solid #1eacff;
+  /* border: 1px solid var(--card-border-rgb); */
+  box-shadow: 0px 3px 14px -5px currentColor;
 }
 
-.title{
-    font-size: 1em;
+.title {
+  font-size: 1em;
 }
 
 .box_icon {
-    text-align: center;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin: 0 auto;
-    background-color: dodgerblue;
-    color: #fff;
-    overflow: hidden;
-    display: grid;
-    place-items: center;
-    margin-bottom: 0.3em;
-    transition: var(--transition);
-    font-size: 2.5em;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: dodgerblue;
+  color: #fff;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.3em;
+  transition: var(--transition);
+  font-size: 2.5em;
 }
 
 .box:hover .box_icon {
-    background-color: cadetblue;
+  background-color: cadetblue;
 }
 
-
 .box_meta p {
-    padding: 5px 0px;
-    font-size: 0.8em;
+  padding: 5px 0px;
+  font-size: 0.8em;
 }
 
 #readMore {
-    padding: 7px 20px;
-    margin: 0 auto;
-    margin-top: 10px;
-    background-color: transparent;
-    border: 1px solid #bababa;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: var(--transition);
-    user-select: none;
+  padding: 7px 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #bababa;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  user-select: none;
 }
 
 #readMore:hover {
-    background-color: dodgerblue;
-    /* border: 1px solid #bababa; */
-    bottom: none;
-    color: #fff;
+  background-color: dodgerblue;
+  /* border: 1px solid #bababa; */
+  bottom: none;
+  color: #fff;
 }

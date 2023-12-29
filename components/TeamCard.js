@@ -8,10 +8,12 @@ import { CiInstagram } from "react-icons/ci";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { FaYoutube } from "react-icons/fa6";
-const TeamCard = ({ imgSrc, name,isShow, designation, desc, fb, tweet, ins, lin, wp, yt, f, t, i, l, w, y }) => {
+import Image from "next/image";
+const TeamCard = ({ imgSrc, name, isShow, designation, desc, fb, tweet, ins, lin, wp, yt, f, t, i, l, w, y }) => {
     return (
         <div className={`${teamStyle.pro} ${teamStyle.ceo}`}>
-            <div className={teamStyle.pro_img}><img src={imgSrc} alt="team1" className={teamStyle.img} /></div>
+            {/* <div className={teamStyle.pro_img}><img src={imgSrc} alt="team1" className={teamStyle.img} /></div> */}
+            <div className={teamStyle.pro_img}><Image src={imgSrc} alt="team1" className={teamStyle.img} width={100} height={100} loading="lazy" /></div>
             <div className={`${teamStyle.pro_desc} ${teamStyle.ceo}`}>
                 <h2>{name}</h2>
                 <p className={teamStyle.desig}>{designation}</p>
