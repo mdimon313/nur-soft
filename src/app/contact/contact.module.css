@@ -104,8 +104,15 @@
   user-select: none;
   transition: var(--transition);
   margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.fomrs button span {
+  margin-left: 0.3em;
+  display: block;
+  font-size: 12px;
+}
 .fomrs button:hover {
   color: #fff;
   background-color: dodgerblue;

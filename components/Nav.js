@@ -16,7 +16,7 @@ const Navigation = () => {
         <header className={headerStyle.header}>
             <div className='container'>
                 <nav className={headerStyle.nav}>
-                    <Link href='/' className={headerStyle.logo}>Soft</Link>
+                    <Link href='/' className={headerStyle.logo}>Nur-Soft</Link>
                     <ul className={headerStyle.ul} style={isClick ? { transform: "scale(1)" } : {}}>
                         <li><Link href='/' className={`${headerStyle.link} ${headerStyle.active}`}>Home</Link></li>
                         <li className={headerStyle.mainMenu}><a className={`${headerStyle.link}`}>Service</a>

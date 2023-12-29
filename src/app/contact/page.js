@@ -21,7 +21,7 @@ const Contact_us = () => {
                                     </div>
                                     <div className={`${contactStyle.contact_info} ${contactStyle.call}`}>
                                         <p>call us</p>
-                                        <span>+880 019-4781-3505</span>
+                                        <span>+880 012-345-678911</span>
                                     </div>
                                     <div className={`${contactStyle.contact_info} ${contactStyle.address}`}>
                                         <p>Location</p>
